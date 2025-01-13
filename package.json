@@ -1,0 +1,103 @@
+{
+  "name": "opentiny-cross-framework",
+  "version": "0.0.1",
+  "private": true,
+  "packageManager": "pnpm@9.14.2",
+  "description": "An enterprise-class UI component library, support both Vue.js 2 and Vue.js 3, as well as PC and mobile.",
+  "author": "OpenTiny Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:opentiny/cross-framework.git"
+  },
+  "bugs": {
+    "url": "https://github.com/opentiny/cross-framework/issues"
+  },
+  "keywords": [
+    "frontend",
+    "component-library",
+    "components",
+    "vue-components",
+    "opentiny",
+    "renderless-components",
+    "headless-components"
+  ],
+  "main": "packages/index.js",
+  "engines": {
+    "node": ">=18",
+    "pnpm": ">=9.5"
+  },
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "postinstall": "pnpm build:internals && pnpm build:utils",
+    "prepare": "husky install",
+    "clean:dependencies": "rm -rf node_modules /**/node_modules",
+    "// ---------- react 相关脚本命令 ----------": "",
+    "dev:react": "pnpm create:mapping-react && pnpm build:entry-react && pnpm -C examples/react-docs run dev",
+    "build:entry-react": "pnpm -C internals/cli build:entry-react",
+    "create:mapping-react": "pnpm -C internals/cli create:mapping-react",
+    "build:react": "pnpm -C internals/cli build:react",
+    "build:ui-react": "pnpm create:mapping-react && pnpm build:entry-react && pnpm build:react",
+    "pub:react": "pnpm --filter=\"./packages/dist-react/**\" publish --no-git-checks --access=public",
+    "dev:react-site": "pnpm --filter @opentiny/react-site start",
+    "build:react-site": "pnpm --filter @opentiny/react-site build",
+    "prettier": "prettier --config .prettierrc --write .",
+    "// ---------- openinula 相关脚本命令 ----------": "",
+    "dev:openinula": "pnpm -C examples/openinula-docs run dev",
+    "// ---------- 预览发布后的solid组件 ----------": "",
+    "preview:solid": "pnpm -C examples/solid-demo run dev",
+    "build:solid": "pnpm -C internals/cli build:solid",
+    "pub:solid": "pnpm --filter=\"./packages/dist-solid/**\" publish --no-git-checks --access=public --registry=https://registry.npmjs.org"
+  },
+  "dependencies": {
+    "fastdom": "1.0.11"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.38.6",
+    "@commitlint/config-conventional": "^18.4.3",
+    "@types/color": "^3.0.3",
+    "@types/eslint": "^8.4.10",
+    "@types/node": "^18.11.18",
+    "@types/shelljs": "^0.8.12",
+    "@typescript-eslint/parser": "^6.12.0",
+    "@volar-plugins/eslint": "^2.0.0",
+    "@volar-plugins/prettier": "^2.0.0",
+    "@volar-plugins/prettyhtml": "^2.0.0",
+    "@vue/tsconfig": "^0.4.0",
+    "commitlint": "^18.4.3",
+    "depcheck": "1.4.3",
+    "eslint": "^8.31.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "fast-glob": "^3.2.12",
+    "fs-extra": "^11.1.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-less": "^5.0.0",
+    "gulp-svg-inline": "^1.0.1",
+    "gulp-transform": "^3.0.5",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.2.0",
+    "minimist": "^1.2.8",
+    "prettier": "^3.0.0",
+    "rimraf": "^3.0.2",
+    "shelljs": "^0.8.5",
+    "shx": "^0.3.4",
+    "typescript": "catalog:",
+    "vite": "catalog:"
+  },
+  "pnpm": {
+    "overrides": {
+      "@playwright/test": "1.42.1",
+      "follow-redirects": "1.14.8",
+      "regenerator-runtime": "0.13.9",
+      "tslib": "2.4.0",
+      "typescript": "catalog:"
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ]
+}
