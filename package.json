@@ -29,7 +29,6 @@
   },
   "scripts": {
     "preinstall": "npx only-allow pnpm",
-    "postinstall": "pnpm build:internals && pnpm build:utils",
     "prepare": "husky install",
     "clean:dependencies": "rm -rf node_modules /**/node_modules",
     "// ---------- react 相关脚本命令 ----------": "",
