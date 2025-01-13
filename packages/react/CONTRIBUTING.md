@@ -24,10 +24,10 @@ button
 
 ```json
   "dependencies": {
-    "@opentiny/vue-renderless": "workspace:~", // 必选
+    "@opentiny/vue-renderless": "^3.21.0", // 必选
     "@opentiny/react-common": "workspace:~", // 必选
     "@opentiny/react-icon": "workspace:~", // 组件需用用 icon，从这里引入
-    "@opentiny/vue-theme": "workspace:~" // 必须，组件的样式一般在这里定义
+    "@opentiny/vue-theme": "^3.21.0" // 必须，组件的样式一般在这里定义
   }
 ```
 

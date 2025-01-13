@@ -10,10 +10,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@opentiny/vue-renderless": "workspace:~",
+    "@opentiny/vue-renderless": "^3.21.0",
     "@opentiny/openinula-common": "workspace:~",
     "@opentiny/openinula-icon": "workspace:~",
-    "@opentiny/vue-theme": "workspace:~",
-    "@opentiny/vue-theme-mobile": "workspace:~"
+    "@opentiny/vue-theme": "^3.21.0",
+    "@opentiny/vue-theme-mobile": "^3.21.0"
   }
 }

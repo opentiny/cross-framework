@@ -1,8 +1,0 @@
-{
-  "extends": "@vue/tsconfig/tsconfig.dom.json",
-  "compilerOptions": {
-    "noImplicitAny": false,
-    "types": ["node", "fs-extra"]
-  },
-  "include": ["command/**/*.ts", "config/**/*.ts", "*.ts"]
-}

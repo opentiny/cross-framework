@@ -12,12 +12,12 @@
     "solid-js": "^1.7.8",
     "@opentiny/solid": "workspace:~",
     "@opentiny/solid-common": "workspace:~",
-    "@opentiny/vue-button": "workspace:~",
-    "@opentiny/vue-alert": "workspace:~",
-    "@opentiny/vue-badge": "workspace:~",
-    "@opentiny/vue-icon": "workspace:~",
-    "@opentiny/vue-switch": "workspace:~",
-    "@opentiny/vue-theme": "workspace:~"
+    "@opentiny/vue-button": "^3.21.0",
+    "@opentiny/vue-alert": "^3.21.0",
+    "@opentiny/vue-badge": "^3.21.0",
+    "@opentiny/vue-icon": "^3.21.0",
+    "@opentiny/vue-switch": "^3.21.0",
+    "@opentiny/vue-theme": "^3.21.0"
   },
   "devDependencies": {
     "fs-extra": "^11.2.0",

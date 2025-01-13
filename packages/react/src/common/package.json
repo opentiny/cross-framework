@@ -10,8 +10,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@opentiny/vue-renderless": "workspace:~",
-    "@opentiny/vue-theme": "workspace:~",
+    "@opentiny/vue-renderless": "^3.21.0",
+    "@opentiny/vue-theme": "^3.21.0",
     "classnames": "^2.3.2",
     "react": "18.2.0",
     "tailwind-merge": "^1.8.0",

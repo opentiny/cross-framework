@@ -10,8 +10,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@opentiny/vue-renderless": "workspace:~",
-    "@opentiny/vue-theme": "workspace:~",
+    "@opentiny/vue-renderless": "^3.21.0",
+    "@opentiny/vue-theme": "^3.21.0",
     "solid-transition-group": "0.2.3",
     "solid-js": "^1.7.8"
   }
